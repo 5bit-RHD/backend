@@ -17,6 +17,8 @@ pip install -r ./requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 ```
+!!! Для корректной работы приложения, поместите модель перевода речи в текст в папку model и проверьте её название в файле "predictor.py".
+
 Запуск backend приложения
 ```
 python manage.py runserver
