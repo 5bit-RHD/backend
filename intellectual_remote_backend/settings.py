@@ -31,12 +31,13 @@ SECRET_KEY = 'django-insecure-1)mr2ercd5$ps*elobr=c3k43wg-ob6&@b&_ph5$7h8=wuta)8
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CURRENT_HOST = "localhost:3000"
 
 # Настройка корс политики
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
 ]
+
+PORT = 8000
 
 # Application definition
 
