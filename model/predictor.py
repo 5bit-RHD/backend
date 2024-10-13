@@ -67,6 +67,9 @@ class AudioTranscriber:
             'тысяча': {"count": 1000, "text": "тысяча"}
         }
 
+    def pushNewCommand(self, command_name: str, command_value: int) -> None:
+        self.commands_dict[command_name] = command_value
+
     def find_closest_command(self, transcription: str, threshold: int = 80) -> tuple:
         closest_command = process.extractOne(transcription, self.commands_dict.keys(), scorer=fuzz.ratio)
         command = closest_command[0]

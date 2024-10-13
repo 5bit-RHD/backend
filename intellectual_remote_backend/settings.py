@@ -30,8 +30,7 @@ SECRET_KEY = 'django-insecure-1)mr2ercd5$ps*elobr=c3k43wg-ob6&@b&_ph5$7h8=wuta)8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
-
+ALLOWED_HOSTS = ["*"]
 CURRENT_HOST = "localhost:3000"
 
 # Настройка корс политики
